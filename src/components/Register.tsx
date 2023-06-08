@@ -27,7 +27,7 @@ function Register() {
 
     try {
       const { data } = await axios.post<CreateUserResponse>(
-        "https://user-auth-backend-bwux.onrender.com/register",
+        REACT_APP_API_ENDPOINT + "/register",
         {
           ...values,
         },

@@ -2,6 +2,7 @@ import "../Home.css";
 import React, { FormEvent, useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
+const { REACT_APP_API_ENDPOINT } = process.env;
 
 function Home() {
   const navigate = useNavigate();
@@ -22,14 +23,11 @@ function Home() {
       navigate("/");
     }
     const user = axios
-      .get<CreateUserResponse>(
-        `https://user-auth-backend-bwux.onrender.com/user/${_id}`,
-        {
-          headers: {
-            Authorization: `Bearer ${token}`,
-          },
-        }
-      )
+      .get<CreateUserResponse>(REACT_APP_API_ENDPOINT + `/user/${_id}`, {
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+      })
       .then((res) => {
         setUser(res.data.data.user);
       });

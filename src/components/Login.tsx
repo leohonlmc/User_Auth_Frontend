@@ -22,7 +22,7 @@ function Login() {
 
     try {
       const { data } = await axios.post<CreateUserResponse>(
-        "https://user-auth-backend-bwux.onrender.com/login",
+        REACT_APP_API_ENDPOINT + "/login",
         {
           ...values,
         },
