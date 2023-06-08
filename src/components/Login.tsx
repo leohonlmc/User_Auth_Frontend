@@ -22,7 +22,7 @@ function Login() {
 
     try {
       const { data } = await axios.post<CreateUserResponse>(
-        "http://localhost:4000/login",
+        "https://user-auth-backend-bwux.onrender.com/login",
         {
           ...values,
         },

@@ -22,11 +22,14 @@ function Home() {
       navigate("/");
     }
     const user = axios
-      .get<CreateUserResponse>(`http://localhost:4000/user/${_id}`, {
-        headers: {
-          Authorization: `Bearer ${token}`,
-        },
-      })
+      .get<CreateUserResponse>(
+        `https://user-auth-backend-bwux.onrender.com/user/${_id}`,
+        {
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+        }
+      )
       .then((res) => {
         setUser(res.data.data.user);
       });
