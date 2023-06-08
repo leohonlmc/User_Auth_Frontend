@@ -1,0 +1,38 @@
+.user-div {
+  font-family: "Righteous", cursive;
+  color: white;
+  width: 350px;
+  background-color: rgb(0, 200, 255);
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 13%;
+  padding: 2%;
+}
+
+.user-details {
+  margin: 5% 0% 5% 0%;
+}
+
+.logout-button {
+  font-family: "Righteous", cursive;
+  background-color: transparent;
+  border-radius: 5px;
+  font-size: 17px;
+  color: white;
+  border: 1px solid rgb(255, 158, 13);
+  transition: 0.6s;
+  padding: 3%;
+}
+
+.logout-button:hover {
+  background-color: rgb(255, 158, 13);
+}
+
+h1 {
+  color: white;
+}
+
+h1 > strong,
+h2 > strong {
+  color: rgb(255, 158, 13);
+}

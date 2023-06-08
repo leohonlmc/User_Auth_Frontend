@@ -1,0 +1,83 @@
+.body {
+  overflow-x: hidden;
+  background-image: url("../public/bg.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  transition: 0.3s;
+}
+
+.login-div {
+  font-family: "Righteous", cursive;
+  color: white;
+  width: 300px;
+  background-color: rgb(0, 200, 255);
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 13%;
+  padding: 2%;
+}
+
+.back-btn-div {
+  margin-bottom: 2%;
+}
+
+.back-btn {
+  text-decoration: none;
+  font-family: "Righteous", cursive;
+  transition: 0.6s;
+  font-size: 20px;
+}
+
+.back-btn:hover {
+  color: rgb(255, 158, 13);
+}
+
+h1 {
+  margin: 0px;
+}
+
+.login-div > p {
+  font-size: 18px;
+  margin: 0px;
+}
+
+.info {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  color: white;
+}
+
+input {
+  width: 95%;
+  padding: 2%;
+  font-size: 17px;
+  border: 0px;
+  font-weight: bold;
+  color: rgb(121, 121, 121);
+}
+
+button {
+  font-family: "Righteous", cursive;
+  background-color: transparent;
+  border-radius: 5px;
+  font-size: 17px;
+  padding: 3%;
+  color: white;
+  border: 1px solid rgb(255, 158, 13);
+  transition: 0.6s;
+}
+
+button:hover {
+  background-color: rgb(255, 158, 13);
+}
+
+span > a {
+  text-decoration: none;
+  color: rgb(63, 34, 211);
+}
+
+strong {
+  color: rgb(255, 158, 13);
+}
