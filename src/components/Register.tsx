@@ -2,6 +2,7 @@ import "../Login.css";
 import React, { FormEvent, useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
+import Footer from "./Footer";
 const { REACT_APP_API_ENDPOINT } = process.env;
 
 function Register() {
@@ -137,6 +138,7 @@ function Register() {
           </button>
         </form>
       </div>
+      <Footer />
     </div>
   );
 }
